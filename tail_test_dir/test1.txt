@@ -1,0 +1,50 @@
+t
+with sigle character on lines, and ending with multiple '\n' characters
+1st line
+2nd line
+3rd line
+4th line
+5th line
+6th line
+7th line        
+8th line
+9th line
+10th line
+11th line                       
+12th line
+13th line
+o
+n
+e
+14th line
+15th line
+c
+16th line
+h   
+17th line   
+a
+18th line
+r
+19th line
+a
+20th line
+c   
+21st line
+t   
+22nd line
+e
+23rd line
+r
+24th line
+25th line
+p
+e
+r
+
+l
+i
+n
+e
+
+
+

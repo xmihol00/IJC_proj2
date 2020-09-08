@@ -1,0 +1,17 @@
+test run at: 13:13:56
+
+===test 1 with file <test.txt
+get_word: Word longer than buffer size occured, remaining characters were striped
+==23771==     in use at exit: 0 bytes in 0 blocks
+==23771==   total heap usage: 16 allocs, 16 frees, 36,851 bytes allocated
+==23771== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+11,13c11,13
+< ------velmi_dlouhe_slovo_druha_varianta_s_vice_nez_128_znaky_u_ktereho_by_mel_byt_error_pouze_jednou_a_ne_vickrat------12345678	1
+< =====velmi_dlouhe_slovo_prvni_varianta_s_vice_nez_sto_dvacet_osm_znaku_u_ktereho_by_mel_byt_error_pouze_jednou_a_ne_vickrat====	2
+< +++++++velmi_dlouhe_slovo_treti_varianta_s_vice_nez_128_znaky_u_ktereho_by_mel_byt_error_pouze_jednou_a_ne_vickrat+++++++123456	1
+---
+> ------velmi_dlouhe_slovo_druha_varianta_s_vice_nez_128_znaky_u_ktereho_by_mel_byt_error_pouze_jednou_a_ne_vickrat------123456789	1
+> =====velmi_dlouhe_slovo_prvni_varianta_s_vice_nez_sto_dvacet_osm_znaku_u_ktereho_by_mel_byt_error_pouze_jednou_a_ne_vickrat=====123456789	2
+> +++++++velmi_dlouhe_slovo_treti_varianta_s_vice_nez_128_znaky_u_ktereho_by_mel_byt_error_pouze_jednou_a_ne_vickrat+++++++123456789	1
+===failed with printed data, check the error message
+

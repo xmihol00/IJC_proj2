@@ -1,0 +1,71 @@
+test run at: 13:13:56
+
+===test 1 with file <test.txt
+get_word: Word longer than buffer size occured, remaining characters were striped
+==23771==     in use at exit: 0 bytes in 0 blocks
+==23771==   total heap usage: 16 allocs, 16 frees, 36,851 bytes allocated
+==23771== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+11,13c11,13
+< ------velmi_dlouhe_slovo_druha_varianta_s_vice_nez_128_znaky_u_ktereho_by_mel_byt_error_pouze_jednou_a_ne_vickrat------12345678	1
+< =====velmi_dlouhe_slovo_prvni_varianta_s_vice_nez_sto_dvacet_osm_znaku_u_ktereho_by_mel_byt_error_pouze_jednou_a_ne_vickrat====	2
+< +++++++velmi_dlouhe_slovo_treti_varianta_s_vice_nez_128_znaky_u_ktereho_by_mel_byt_error_pouze_jednou_a_ne_vickrat+++++++123456	1
+---
+> ------velmi_dlouhe_slovo_druha_varianta_s_vice_nez_128_znaky_u_ktereho_by_mel_byt_error_pouze_jednou_a_ne_vickrat------123456789	1
+> =====velmi_dlouhe_slovo_prvni_varianta_s_vice_nez_sto_dvacet_osm_znaku_u_ktereho_by_mel_byt_error_pouze_jednou_a_ne_vickrat=====123456789	2
+> +++++++velmi_dlouhe_slovo_treti_varianta_s_vice_nez_128_znaky_u_ktereho_by_mel_byt_error_pouze_jednou_a_ne_vickrat+++++++123456789	1
+===failed with printed data, check the error message
+
+===test 2 with file <pg.txt
+==23785==     in use at exit: 0 bytes in 0 blocks
+==23785==   total heap usage: 20,928 allocs, 20,928 frees, 539,289 bytes allocated
+==23785== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===run successfuly
+
+===test 3 with file <num_seq.txt
+==23797==     in use at exit: 0 bytes in 0 blocks
+==23797==   total heap usage: 1,000,004 allocs, 1,000,004 frees, 24,036,232 bytes allocated
+==23797== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===run successfuly
+
+===test 4 with file </usr/share/dict/words
+==23809==     in use at exit: 0 bytes in 0 blocks
+==23809==   total heap usage: 102,404 allocs, 102,404 frees, 2,647,022 bytes allocated
+==23809== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===run successfuly
+
+===test 5 with file <SHtest.txt
+==23820==     in use at exit: 0 bytes in 0 blocks
+==23820==   total heap usage: 15,224 allocs, 15,224 frees, 422,111 bytes allocated
+==23820== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===run successfuly
+
+===test 6 with file <test2.txt
+==23832==     in use at exit: 0 bytes in 0 blocks
+==23832==   total heap usage: 12,385 allocs, 12,385 frees, 348,489 bytes allocated
+==23832== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===run successfuly
+
+===test 7 with file <test3.txt
+==23843==     in use at exit: 0 bytes in 0 blocks
+==23843==   total heap usage: 8,708 allocs, 8,708 frees, 243,695 bytes allocated
+==23843== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===run successfuly
+
+===test 8 with file <test4.txt
+==23854==     in use at exit: 0 bytes in 0 blocks
+==23854==   total heap usage: 8,406 allocs, 8,406 frees, 238,145 bytes allocated
+==23854== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===run successfuly
+
+===test 9 with file <test5.txt
+==23866==     in use at exit: 0 bytes in 0 blocks
+==23866==   total heap usage: 13,552 allocs, 13,552 frees, 374,532 bytes allocated
+==23866== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===run successfuly
+
+===test 10 with file <test6.txt
+==23877==     in use at exit: 0 bytes in 0 blocks
+==23877==   total heap usage: 131 allocs, 131 frees, 46,815 bytes allocated
+==23877== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===run successfuly
+
